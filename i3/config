@@ -173,6 +173,9 @@ exec_always feh --bg-center /home/alex/Pictures/wallpaper2.jpg
 # Snipping tool 
 bindsym $mod+Shift+s exec flameshot gui
 
+# Lock
+bindsym $mod+Ctrl+l exec asciiquarium-lock
+
 # Brightness control
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
@@ -196,6 +199,8 @@ gaps inner 3
 
 # Autotiling
 exec_always --no-startup-id autotiling
+
+for_window [class="^.*"] border pixel 
 
 # Color 
 set $bg-color 	         #2f343f

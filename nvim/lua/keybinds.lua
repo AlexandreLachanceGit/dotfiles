@@ -1,6 +1,8 @@
 local nest = require("nest")
 
 vim.cmd("tnoremap <Esc> <C-\\><C-n>")
+vim.cmd("map <C-h> <Nop>")
+vim.cmd("nnoremap <CR> :noh<CR><CR>")
 
 nest.applyKeymaps {
     {
@@ -36,7 +38,6 @@ nest.applyKeymaps {
             {"j>", "<cmd>wincmd j<cr>"},
             {"h>", "<cmd>wincmd h<cr>"},
             {"l>", "<cmd>wincmd l<cr>"},
-            {"cr>", "<cmd>ToggleTerm direction=vertical size=45<cr>"}
         }
     },
     {
