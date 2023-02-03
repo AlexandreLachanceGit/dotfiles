@@ -20,6 +20,8 @@ vim.opt.scrolloff = 8
 
 vim.opt.updatetime = 50
 
+vim.lsp.set_log_level("debug")
+
 if vim.g.neovide then
     print("here")
     vim.g.neovide_transparency = 0.98
